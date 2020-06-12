@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import Routes from "./Routes";
 import axios from "axios";
 import "./styles/global.scss";
@@ -32,6 +32,7 @@ function App() {
   }, [token, userId]);
   return (
     <Router>
+      {!token && <Redirect to="/login" />}
       <UserContext.Provider value={{ user }}>
         <div className="App">
           <Routes />

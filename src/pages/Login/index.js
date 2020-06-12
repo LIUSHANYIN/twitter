@@ -39,7 +39,7 @@ export default function LoginPage({ history }) {
             className="input"
             name="phone"
             placeholder="Enter your phone here"
-            type="phone"
+            type="tel"
             value={values.phone}
             onChange={handleInputChange}
           />
@@ -47,7 +47,7 @@ export default function LoginPage({ history }) {
             className="input"
             name="password"
             placeholder="Enter your password here"
-            type="password"
+            type="number"
             value={values.password}
             onChange={handleInputChange}
           />

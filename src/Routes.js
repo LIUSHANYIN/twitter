@@ -21,15 +21,15 @@ const routes = [
 export default function Routes() {
   return (
     <div>
-      {routes.map((routes, i) => (
-        <Route
-          component={routes.component}
-          path={routes.path}
-          exact={routes.isExact}
-          key={i}
-        />
-      ))}
-      
+      {routes &&
+        routes.map((routes, i) => (
+          <Route
+            component={routes.component}
+            path={routes.path}
+            exact={routes.isExact}
+            key={i}
+          />
+        ))}
     </div>
   );
 }
