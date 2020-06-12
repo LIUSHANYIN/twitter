@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left img {
+  margin-right: 70px;
+  margin-left: 30px;
+}
+.nav-left h2 {
+  margin-right: 50px;
+}
+.hr {
+  height: 10px;
+  background: #1f8efa;
+  width: 70px;
+  position: relative;
+  left: -22px;
+  display: none;
+}
+.active {
+  display: flex;
+}
+.drop {
+  position: absolute;
+}
+.user img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

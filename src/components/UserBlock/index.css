@@ -1,0 +1,12 @@
+.block-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 150px;
+}
+.block {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -150px;
+}

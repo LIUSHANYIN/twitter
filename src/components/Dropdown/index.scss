@@ -1,0 +1,34 @@
+.dropdown-container {
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  .dropdown {
+    height: 0;
+    opacity: 0;
+  }
+  &.active {
+    .dropdown {
+      height: auto;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 19px;
+      }
+      h2:hover {
+        cursor: pointer;
+        color: rgb(49, 200, 238);
+      }
+      .logout {
+        color: #c62121;
+      }
+    }
+  }
+}

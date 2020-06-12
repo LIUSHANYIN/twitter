@@ -1,0 +1,41 @@
+.AddFriend {
+  background-color: white;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myfriend-container {
+  width: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.myfriend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.myfriend-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.myfriend-left img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.myfriend-left p {
+  margin-right: 40px;
+}
+.myfriend-right p {
+  padding-left: 20px;
+}

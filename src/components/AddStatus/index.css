@@ -1,0 +1,170 @@
+.status-top {
+  background-color: white;
+
+  flex-direction: column;
+  margin-top: 20px;
+}
+.status-top-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-top img {
+  padding-right: 20px;
+}
+.user-top p span {
+  font-weight: 700;
+  padding-right: 20px;
+}
+.friendsStatus-container {
+  background-color: white;
+  width: 800px;
+  margin: 20px 0px;
+  padding: 0 20px;
+}
+.friendsStatus-container button:hover {
+  cursor: pointer;
+}
+.status-top-user button {
+  margin-left: 350px;
+  border: none;
+  font-size: 30px;
+  text-align: center;
+}
+.status-text {
+  margin: 30px 10px;
+}
+
+.status-judge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.status-judge img {
+  margin-right: 10px;
+}
+.status-judge p {
+  margin-right: 10px;
+}
+.status-judge button {
+  border: none;
+}
+.status-bottom-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-bottom-top button {
+  border: none;
+  font-size: 10px;
+}
+.status-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+.status-judge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+  border-radius: 6px;
+}
+.comment h2 {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f8efa;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.comment p {
+  padding-right: 30px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.white-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.white-comment input {
+  background: #eeeeee;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 620px;
+  height: 40px;
+  padding-left: 20px;
+}
+.Status-btn button {
+  background: #f0f3f8;
+  border-radius: 100px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  width: 70px;
+  height: 30px;
+  margin: 20px 0px;
+  color: #202841;
+  border: none;
+  margin-left: 50px;
+  outline: none;
+}
+
+.user-status {
+  display: flex;
+  align-items: center;
+}
+.user-status input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  color: black;
+}
+
+.user-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-bottom button {
+  background: #1f8efa;
+  box-shadow: 0px 6px 12px rgba(49, 127, 203, 0.32);
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.user-bottom button:hover {
+  background: rgb(113, 178, 243);
+  cursor: pointer;
+}
+.Friend-Status {
+  background-color: white;
+  margin: 20px 300px;
+}

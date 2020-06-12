@@ -1,0 +1,72 @@
+.avatar img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+.Profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1124px;
+  height: 100px;
+  background: #1f8efa;
+  box-shadow: inset 0px -1px 0px #f5f7fa;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+.Profile-top h2 {
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.Profile-top input {
+  background: #ffffff;
+  border-radius: 15px;
+
+  width: 220px;
+  height: 30px;
+  padding-left: 20px;
+}
+.user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.friends-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f7f7f7;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+  border-radius: 6px;
+}
+.single-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 321px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  margin: 10px 20px;
+}
+.single-container h2 {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #1f8efa;
+}
+.single-container button {
+  border: none;
+}
+.single-container button:hover {
+  cursor: pointer;
+}
