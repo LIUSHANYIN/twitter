@@ -4,9 +4,17 @@ import "./index.css";
 import { Link } from "react-router-dom";
 export default function LoginPage({ history }) {
   const [values, setValues] = useState({});
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setValues({ ...values, [name]: value });
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+  const handlePhoneInputChange = (e) => {
+    const value = e.target.value;
+    setPhone(value);
+    setValues({ ...values, phone: value });
+  };
+  const handlePassInputChange = (e) => {
+    const value = e.target.value;
+    setPassword(value);
+    setValues({ ...values, password: value });
   };
 
   const handleLogin = async () => {
@@ -39,16 +47,16 @@ export default function LoginPage({ history }) {
             name="phone"
             placeholder="Enter your phone here"
             type="tel"
-            value={values.phone}
-            onChange={handleInputChange}
+            value={phone}
+            onChange={handlePhoneInputChange}
           />
           <input
             className="input"
             name="password"
             placeholder="Enter your password here"
-            type="number"
-            value={values.password}
-            onChange={handleInputChange}
+            type="password"
+            value={password}
+            onChange={handlePassInputChange}
           />
           <div>
             <input type="checkbox" />
