@@ -23,7 +23,7 @@ export default function RegisterPage({ history }) {
     formData.append("files", file);
     console.log(formData);
     const uploadResult = await axios.post(
-      "http://localhost:3010/auth/avatar",
+      "https://twitter-service-sy.herokuapp.com/auth/avatar",
       formData
     );
 
@@ -34,14 +34,14 @@ export default function RegisterPage({ history }) {
     const { phone, password } = values;
     try {
       const registerResult = await axios.post(
-        "http://localhost:3010/auth/register",
+        "https://twitter-service-sy.herokuapp.com/auth/register",
         values
       );
       console.log(registerResult);
 
       if (registerResult.data.success) {
         const loginResult = await axios.post(
-          "http://localhost:3010/auth/login",
+          "https://twitter-service-sy.herokuapp.com/auth/login",
           {
             phone,
             password,
