@@ -12,7 +12,7 @@ export default function LoginPage({ history }) {
   const handleLogin = async () => {
     try {
       const loginResult = await axios.post(
-        "http://localhost:3010/auth/login",
+        "https://twitter-service-sy.herokuapp.com/auth/login",
         values
       );
       console.log(loginResult);
