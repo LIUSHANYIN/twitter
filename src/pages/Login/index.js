@@ -15,7 +15,6 @@ export default function LoginPage({ history }) {
         "https://twitter-service-sy.herokuapp.com/auth/login",
         values
       );
-      console.log(loginResult);
 
       if (loginResult.data.success) {
         window.localStorage.setItem("token", loginResult.data.data.token);

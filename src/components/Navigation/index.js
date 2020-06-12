@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef } from "react";
+import React, { useContext, useState } from "react";
 import UserContext from "../../context/index";
 import "./index.css";
 import classnames from "classnames";
@@ -18,18 +18,8 @@ export default function Navigation({
   const [isActive, setActive] = useState(false);
 
   const handleDropDown = () => {
-    setActive(true);
+    setActive(!isActive);
   };
-
-  const userRef = useRef(null);
-  const dropRef = useRef(null);
-  useEffect(() => {
-    window.addEventListener("click", (e) => {
-      if (e.target !== userRef.current && !dropRef.current.contains(e.target)) {
-        setActive(false);
-      }
-    });
-  });
 
   return (
     <div>
@@ -58,14 +48,12 @@ export default function Navigation({
 
         <div>
           {user.firstName && (
-            <div className='user'>
+            <div className="user">
               <img src={user.avatar} alt="" />
-              <h1 ref={userRef} onClick={handleDropDown}>
-                {user.firstName}
-              </h1>
+              <h1 onClick={handleDropDown}>{user.firstName}</h1>
             </div>
           )}
-          <div ref={dropRef}>
+          <div>
             <Dropdown
               handleSetting={handleSetting}
               handleDropProfile={handleDropProfile}
