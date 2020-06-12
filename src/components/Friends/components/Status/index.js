@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import PostService from "../../../../service/post";
+import { useContext } from "react";
+import UserContext from "../../../../context";
 
 export default function Status() {
   const userId = window.localStorage.getItem("userId");
   const [status, setStatus] = useState([]);
   const [input, setInput] = useState("");
+  const { user } = useContext(UserContext);
 
   const heart =
     "https://res.cloudinary.com/dlapk94rx/image/upload/v1589401145/Fill_1161_x4jgjr.png";
@@ -102,7 +105,7 @@ export default function Status() {
                       ))}
                   </div>
                   <div className="white-comment">
-                    <img src={statu.author[0].avatar} alt="" className="head" />
+                    <img src={user.avatar} alt="" className="head" />
                     <input
                       type="text"
                       placeholder="White a comment"
